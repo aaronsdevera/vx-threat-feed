@@ -4,12 +4,12 @@ VX Underground threat feed of indicators and observables
 ## Example row level schema
 |Name|Description|Data Type|Format|
 |---|---|---|---|
-id|Unique row identifier|uuid|uuid
-created_at|Timestamp of row creation|timestamp with time zone|timestamptz
-type|Type of observable (`ipv4`,`sha256`,`md5`,`host`,`url`)|character varying|varchar
-observable|Raw text of the observable|character varying|varchar	
-references|Links to research or URL where observable is identified|ARRAY|_varchar	
-tags|User submitted tags for observable (eg. `emotet`,`apt28`)|ARRAY|_varchar	
+id|Unique row identifier|uuid|`uuid`
+created_at|Timestamp of row creation|timestamp with time zone|`timestamptz`
+type|Type of observable (`ipv4`,`sha256`,`md5`,`host`,`url`)|character varying|`varchar`
+observable|Raw text of the observable|character varying|`varchar	`
+references|Links to research or URL where observable is identified|ARRAY|`_varchar`	
+tags|User submitted tags for observable (eg. `emotet`,`apt28`)|ARRAY|`_varchar	`
 ```
 
 ## TODO
