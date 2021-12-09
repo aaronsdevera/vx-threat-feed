@@ -6,6 +6,8 @@ VX Underground threat feed of indicators and observables
 |---|---|---|---|
 id|Unique row identifier|uuid|`uuid`
 created_at|Timestamp of row creation|timestamp with time zone|`timestamptz`
+first_seen|If available, when the obserable was first seen|timestamp with time zone|`timestamptz`
+last_seen|If available, when the obserable was most recently seen|timestamp with time zone|`timestamptz`
 type|Type of observable (`ipv4`,`sha256`,`md5`,`host`,`url`)|character varying|`varchar`
 observable|Raw text of the observable|character varying|`varchar	`
 references|Links to research or URL where observable is identified|ARRAY|`_varchar`	
